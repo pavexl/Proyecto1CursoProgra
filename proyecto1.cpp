@@ -75,6 +75,13 @@ int main() {
 
 void registrar(string nombres[], double notas[], int &contador) {
 
+    if (contador >= 100)
+    {
+        cout << "Limite de estudiantes alcanzado." << endl;
+        return;
+    }
+    
+
     cout << "Ingrese el nombre del estudiante: ";
     cin >> nombres[contador];
 
