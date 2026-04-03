@@ -136,3 +136,26 @@ void calcularPromedio(double notas[], int contador) {
     
 }
 
+// Función para buscar un estudiante por nombre
+void buscar(string nombres[], double notas[], int contador) {
+
+    string nombre;
+
+    cout << "Ingrese el nombre del estudiante a buscar: ";
+    cin >> nombre;
+
+    for (int i = 0; i < contador; i++)
+    {
+        if (nombres[i] == nombre) {
+            cout << "Estudiante encontrado: " << nombres[i] << " - Nota: " << notas[i] <<endl;
+            return;
+        }
+    }
+    
+    if (contador == 0){
+        cout << "No hay estudiantes registrados para buscar." << endl;
+        return;
+    }
+
+}
+
