@@ -95,3 +95,21 @@ void registrar(string nombres[], double notas[], int &contador) {
 
 }
 
+// Función para mostrar los estudiantes y sus notas
+
+void mostrar(string nombres[], double notas[], int contador) {
+
+    if (contador == 0)
+    {
+        cout << "No hay estudiantes registrados." << endl;
+        return;
+    }
+
+    for (int i = 0; i < contador; i++)
+    {
+        cout << "Estudiante:" <<nombres[i] << " - Nota: " << notas[i] << endl;
+        
+    }
+
+}
+
