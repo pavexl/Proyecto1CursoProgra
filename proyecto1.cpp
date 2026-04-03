@@ -32,6 +32,13 @@ int main() {
         cout << "Seleccione una opcion: ";
         cin >> opcion;
 
+        if (opcion < 1 || opcion > 6)
+        {
+            cout << "Opcion no valida. Por favor, intente de nuevo.\n" << endl;
+            continue;
+        }
+        
+
         // Validar la opción ingresada y llamo a la función correspondiente
         switch (opcion) {
 
