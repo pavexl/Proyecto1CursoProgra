@@ -159,3 +159,28 @@ void buscar(string nombres[], double notas[], int contador) {
 
 }
 
+// Funcion de mejora para mostrar el estudiante con la mayor nota
+void mayorNota(string nombre[], double notas[], int contador) {
+
+    if (contador == 0)
+    {
+        cout << "No hay estudiantes registrados para mostrar la mayor nota." << endl;
+        return;
+    }
+
+    double mayor = notas[0];
+    int indiceMayor = 0;
+
+    for (int i = 0; i < contador; i++)
+    {
+        if (notas[i] > mayor)
+        {
+            mayor = notas[i];
+            indiceMayor = i;
+        }
+        
+    }
+
+    cout << "El estudiante con la mayor nota es: " << nombre[indiceMayor] << " - Nota: " << mayor << endl;
+
+}
