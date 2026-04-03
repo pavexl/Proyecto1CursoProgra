@@ -183,6 +183,8 @@ void buscar(string nombres[], double notas[], int contador) {
 
     string nombreCompleto = nombre + " " + apellido;
 
+    cout << "================================\n" << endl;
+
     for (int i = 0; i < contador; i++)
     {
         if (nombres[i] == nombreCompleto) {
@@ -191,6 +193,8 @@ void buscar(string nombres[], double notas[], int contador) {
         }
     }
 
+    cout << "================================\n" << endl;
+    
     cout << "Estudiante no encontrado.\n" << endl;
 
 }
@@ -217,6 +221,8 @@ void mayorNota(string nombre[], double notas[], int contador) {
         
     }
 
+    cout << "================================\n" << endl;
     cout << "El estudiante con la mayor nota es: " << nombre[indiceMayor] << " - Nota: " << mayor << endl;
+    cout << "================================\n" << endl;
 
 }
