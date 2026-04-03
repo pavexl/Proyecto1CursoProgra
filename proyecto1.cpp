@@ -69,3 +69,29 @@ int main() {
     return 0;
 
 }
+
+//======================= DEFINICION DE FUNCIONES ======================
+// Función para registrar un estudiante y su nota
+
+void registrar(string nombres[], double notas[], int &contador) {
+
+    cout << "Ingrese el nombre del estudiante: ";
+    cin >> nombres[contador];
+
+    do {
+
+        cout << "Ingrese la nota del estudiante (0-20): ";
+        cin >> notas[contador]; 
+
+        if (notas[contador] < 0 || notas[contador] > 20)
+        {
+            cout << "Nota invalida. Por favor, ingrese una nota entre 0 y 20." << endl;
+        }
+        
+    } while (notas[contador]<0 || notas[contador]>20);
+
+    contador++;
+    cout << "Estudiante registrado exitosamente." << endl;
+
+}
+
