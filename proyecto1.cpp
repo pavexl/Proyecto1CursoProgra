@@ -85,7 +85,7 @@ void registrar(string nombres[], double notas[], int &contador) {
 
         if (notas[contador] < 0 || notas[contador] > 20)
         {
-            cout << "Nota invalida. Por favor, ingrese una nota entre 0 y 20." << endl;
+            cout << "Nota invalida. Por favor, ingrese una nota entre 0 y 20. \n";
         }
         
     } while (notas[contador]<0 || notas[contador]>20);
@@ -107,7 +107,7 @@ void mostrar(string nombres[], double notas[], int contador) {
 
     for (int i = 0; i < contador; i++)
     {
-        cout << "Estudiante:" <<nombres[i] << " - Nota: " << notas[i] << endl;
+        cout << "Estudiante: " <<nombres[i] << " - Nota: " << notas[i] << endl;
         
     }
 
