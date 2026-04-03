@@ -112,6 +112,8 @@ void registrar(string nombres[], double notas[], int &contador) {
     contador++;
     cout << "Estudiante registrado exitosamente." << endl;
 
+    cout << "===============================\n" << endl;
+
 }
 
 // Función para mostrar los estudiantes y sus notas
@@ -155,7 +157,11 @@ void calcularPromedio(double notas[], int contador) {
 
     double promedio = suma / contador;
 
+    cout << "================================\n" << endl;
+
     cout << "El promedio de las notas es: " << promedio << endl;
+
+    cout << "================================\n" << endl;
     
 }
 
@@ -167,14 +173,19 @@ void buscar(string nombres[], double notas[], int contador) {
         return;
     }
 
-    string nombre;
+    string nombre, apellido;
 
-    cout << "Ingrese el nombre del estudiante a buscar EXACTAMENTE como fue registrado: ";
+    cout << "Ingrese el nombre: ";
     cin >> nombre;
+    
+    cout << "Ingrese el apellido: ";
+    cin >> apellido;
+
+    string nombreCompleto = nombre + " " + apellido;
 
     for (int i = 0; i < contador; i++)
     {
-        if (nombres[i] == nombre) {
+        if (nombres[i] == nombreCompleto) {
             cout << "Estudiante encontrado: " << nombres[i] << " - Nota: " << notas[i] <<endl;
             return;
         }
