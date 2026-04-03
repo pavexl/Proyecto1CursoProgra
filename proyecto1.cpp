@@ -124,11 +124,15 @@ void mostrar(string nombres[], double notas[], int contador) {
         return;
     }
 
+    cout << "\n====== LISTA DE ESTUDIANTES Y NOTAS: ===========" << endl;
+
     for (int i = 0; i < contador; i++)
     {
         cout << "Estudiante: " <<nombres[i] << " - Nota: " << notas[i] << endl;
         
     }
+
+    cout << "==============================================\n" << endl;
 
 }
 
