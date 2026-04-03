@@ -89,8 +89,15 @@ void registrar(string nombres[], double notas[], int &contador) {
     }
     
 
+    string nombre, apellido;
     cout << "Ingrese el nombre del estudiante: ";
-    cin >> nombres[contador];
+    cin >> nombre;
+
+    cout << "Ingrese el apellido del estudiante: ";
+    cin >> apellido;
+
+    nombres[contador] = nombre + " " + apellido;
+
 
     do {
 
