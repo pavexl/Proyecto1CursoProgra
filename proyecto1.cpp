@@ -32,33 +32,40 @@ int main() {
         cout << "Seleccione una opcion: ";
         cin >> opcion;
 
+        // Validar la opción ingresada y llamo a la función correspondiente
+        switch (opcion) {
+
+            case 1:
+                registrar(nombres, notas, contador);
+            break;
+
+            case 2:
+                mostrar(nombres, notas, contador);
+            break;
+
+            case 3:
+                calcularPromedio(notas, contador);
+            break;
+
+            case 4:
+                buscar(nombres, notas, contador);
+            break;
+
+            case 5:
+                mayorNota(nombres, notas, contador);
+            break;
+
+            case 6:
+                cout << "Saliendo del programa..." << endl;
+            break;
         
+            default:
+                cout << "Opcion no valida. Por favor, intente de nuevo." << endl;
+            break;
+        }
 
+    } while (opcion != 6);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    } while (condition);
-    
-
-
-
-
+    return 0;
 
 }
