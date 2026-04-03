@@ -84,10 +84,9 @@ void registrar(string nombres[], double notas[], int &contador) {
 
     if (contador >= 100)
     {
-        cout << "Limite de estudiantes alcanzado." << endl;
+        cout << "Limite de estudiantes alcanzado.\n" << endl;
         return;
     }
-    
 
     string nombre, apellido;
     cout << "Ingrese el nombre del estudiante: ";
@@ -97,7 +96,6 @@ void registrar(string nombres[], double notas[], int &contador) {
     cin >> apellido;
 
     nombres[contador] = nombre + " " + apellido;
-
 
     do {
 
@@ -167,7 +165,7 @@ void buscar(string nombres[], double notas[], int contador) {
 
     string nombre;
 
-    cout << "Ingrese el nombre del estudiante a buscar: ";
+    cout << "Ingrese el nombre del estudiante a buscar EXACTAMENTE como fue registrado: ";
     cin >> nombre;
 
     for (int i = 0; i < contador; i++)
