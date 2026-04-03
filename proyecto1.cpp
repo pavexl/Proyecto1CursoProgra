@@ -113,3 +113,26 @@ void mostrar(string nombres[], double notas[], int contador) {
 
 }
 
+// Función para calcular el promedio de las notas
+
+void calcularPromedio(double notas[], int contador) {
+
+    if (contador == 0)
+    {
+        cout << "No hay estudiantes registrados para calcular el promedio." << endl;
+        return;
+    }
+
+    double suma = 0;
+
+    for (int i = 0; i < contador; i++)
+    {
+        suma = suma + notas[i];
+    }
+
+    double promedio = suma / contador;
+
+    cout << "El promedio de las notas es: " << promedio << endl;
+    
+}
+
