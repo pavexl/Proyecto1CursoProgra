@@ -19,6 +19,42 @@ int main() {
     int contador = 0;
     int opcion;
 
+    // Menu del programa
+    do
+    {
+        cout << "BIENVENIDO AL PROGRAMA DE GESTION DE NOTAS" << endl;
+        cout << "1. Registrar estudiante y nota" << endl;
+        cout << "2. Mostrar estudiantes y notas" << endl;
+        cout << "3. Calcular promedio de notas" << endl;
+        cout << "4. Buscar estudiante por nombre" << endl;
+        cout << "5. Mostrar estudiante con mayor nota" << endl;
+        cout << "6. Salir" << endl;
+        cout << "Seleccione una opcion: ";
+        cin >> opcion;
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    } while (condition);
     
 
 
